@@ -130,3 +130,15 @@
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
+
+;; Drop the toolbar
+(tool-bar-mode -1)
+
+;; Activate ido
+(require 'ido)
+(ido-mode t)
+
+;; Activate mac key mode
+(require 'redo+)
+(require 'mac-key-mode)
+(mac-key-mode 1)
